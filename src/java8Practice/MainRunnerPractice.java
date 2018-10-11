@@ -1,5 +1,7 @@
 package java8Practice;
 
+import java.util.List;
+
 public class MainRunnerPractice {
 
 	public static void main (String args[])
@@ -12,7 +14,8 @@ public class MainRunnerPractice {
 		exercise.streamExercise();
 		
 		Exercise2 exer = new Exercise2();
-		exer.exercise2();
+		String[] fire = {"A123", "B111", "C453", "C3312", "D12", "A2333", "D344", "A9000001"};
+		exer.exercise2(fire);
 	}
 	
 }

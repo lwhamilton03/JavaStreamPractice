@@ -6,9 +6,9 @@ import java.util.stream.Stream;
 
 public class Exercise2 {
 
-	public void exercise2()
+	public void exercise2(String [] input)
 	{
-	List<String> inputStrings = Arrays.asList("A123", "B111", "C453", "C3312", "D12", "A2333");
+	List<String> inputStrings = Arrays.asList(input);
 	
 	inputStrings.stream()
 			.filter(word -> word.charAt(0) != 'D')
