@@ -75,7 +75,6 @@ public class Alphabet {
 			
 		case "1": 
 		{
-			//sec = checkDigit(sec);
 			switch(sec)
 			{
 				case "0": 
@@ -139,7 +138,7 @@ public class Alphabet {
 		
 		case "2": 
 		{
-			word = "twenty ";
+			word = "twenty";
 			if(sec == "0")
 			{
 				return "twenty"; 
@@ -149,37 +148,37 @@ public class Alphabet {
 		
 		case "3": 
 		{
-			word = "thirty "; 
+			word = "thirty"; 
 			break;
 		}
 		case "4": 
 		{
-			word = "fourty "; 
+			word = "fourty"; 
 			break;
 		}
 		case "5": 
 		{
-			word = "fifty "; 
+			word = "fifty"; 
 			break;
 		}
 		case "6": 
 		{
-			word = "sixty "; 
+			word = "sixty"; 
 			break;
 		}
 		case "7": 
 		{
-			word = "seventy "; 
+			word = "seventy"; 
 			break;
 		}
 		case "8": 
 		{
-			word = "eighty "; 
+			word = "eighty"; 
 			break;
 		}
 		case "9": 
 		{
-			word = "ninety "; 
+			word = "ninety"; 
 			break;
 		}
 		
@@ -205,7 +204,6 @@ return word;
 										}
 										if(word.length() == 2)
 										{
-											
 											String firstDig = String.valueOf(word.charAt(0)); 
 											if(firstDig.equals("1"))
 												{
@@ -221,6 +219,12 @@ return word;
 										}
 										return word; 
 									}
-								).forEach(System.out::println);;
+								).map((num) ->
+										{
+											String firstLetter = String.valueOf(num.charAt(0));
+											String body = num.substring(1);
+											return firstLetter.toUpperCase() + body;//return firstLetter::toUpperCase;
+										}
+									).sorted().forEach(System.out::println);;
 	}
 }
