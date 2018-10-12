@@ -27,6 +27,10 @@ public class MainRunnerPractice {
 		exer.exercise2(fire);
 		System.out.println("");
 		exer.exercise2(water);
+		
+		Alphabet exercise3 = new Alphabet();
+		Integer [] listOfInts = {22, 1, 2, 34, 4, 11, 12, 13, 14, 15, 20, 30};
+		exercise3.organise(listOfInts);
 	}
 	
 }
