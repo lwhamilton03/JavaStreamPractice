@@ -31,6 +31,20 @@ public class MainRunnerPractice {
 		Alphabet exercise3 = new Alphabet();
 		Integer [] listOfInts = {22, 1, 2, 34, 4, 11, 12, 13, 14, 15, 20, 30};
 		exercise3.organise(listOfInts);
+		
+		Accounts acc = new Accounts(); 
+		try 
+			{
+				acc.division(2, 1234); 
+			} 
+		catch(MyExceptions e)
+			{
+				System.out.println("B is greater than 23");
+			}
+		finally
+		{
+			System.out.println("I will always execute as I'm 'Finally'");
+		}
 	}
 	
 }

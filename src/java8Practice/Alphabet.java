@@ -194,6 +194,7 @@ return word;
 		
 		inputStrings.stream().map((num) -> 
 									{
+										//System.out.println(num + " ");
 										String word = String.valueOf(num);
 										//System.out.println(word);
 										if(word.length() == 1)
